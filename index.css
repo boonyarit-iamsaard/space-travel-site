@@ -372,10 +372,6 @@ select {
     transform: translateX(0);
   }
 
-  .primary-navigation.underline-indicators > .active {
-    border: 0;
-  }
-
   .mobile-nav-toggle {
     display: block;
     position: absolute;
