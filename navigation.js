@@ -5,7 +5,10 @@ const navToggle = document.querySelector('.mobile-nav-toggle');
 Array.from(nav.children).forEach(item => {
   const pathname = item.children[0].pathname;
 
-  if (pathname === currentPath) {
+  if (
+    pathname === currentPath ||
+    (pathname === '/index.html' && currentPath === '/')
+  ) {
     item.classList.add('active');
   } else {
     item.classList.remove('active');
